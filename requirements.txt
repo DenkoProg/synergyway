@@ -1,0 +1,9 @@
+Django>=3.2
+celery
+redis
+psycopg2-binary
+django-celery-beat
+pytest
+pytest-django
+flake8
+requests
