@@ -18,15 +18,15 @@ CELERY_RESULT_BACKEND = 'redis://redis:6379/0'
 
 CELERY_BEAT_SCHEDULE = {
     'fetch_users': {
-        'task': 'myapp.tasks.fetch_users',
+        'task': 'data_fetcher.tasks.fetch_users',
         'schedule': crontab(minute='*/5'),
     },
     'fetch_addresses': {
-        'task': 'myapp.tasks.fetch_addresses',
+        'task': 'data_fetcher.tasks.fetch_addresses',
         'schedule': crontab(minute='*/10'),
     },
     'fetch_credit_cards': {
-        'task': 'myapp.tasks.fetch_credit_cards',
+        'task': 'data_fetcher.tasks.fetch_credit_cards',
         'schedule': crontab(minute='*/15'),
     },
 }

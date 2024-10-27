@@ -65,6 +65,8 @@ This command will start the following containers:
 - **web**: Django and Celery application container.
 - **db**: PostgreSQL database container.
 - **redis**: Redis broker container for Celery.
+- **celery-beat**: Celery Beat container for periodic tasks.
+- **celery-worker**: Celery worker container for executing tasks.
 
 ### **5. Run Migrations**
 

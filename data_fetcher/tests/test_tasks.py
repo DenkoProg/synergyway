@@ -2,6 +2,7 @@ import pytest
 from ..models import User, Address, CreditCard
 from ..tasks import fetch_users, fetch_addresses, fetch_credit_cards
 
+
 @pytest.mark.django_db
 def test_fetch_users_creates_users():
     fetch_users()
